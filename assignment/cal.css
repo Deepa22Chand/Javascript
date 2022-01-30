@@ -1,0 +1,28 @@
+body {
+  color: #4fb6df;
+  font: 300 18px/1.6 "Source Sans Pro", sans-serif;
+
+  padding: 5em 0 2em;
+  text-align: center;
+}
+button {
+  border-radius: 10px;
+  background: rgba(42, 50, 113, 0.28);
+  color: #022b3b;
+  cursor: pointer;
+  float: left;
+  font: inherit;
+  margin: 0.25em;
+  padding: 20px;
+  width: 100px;
+  /* width: 8%;
+  height: 60px; */
+}
+.reset {
+  width: 15%;
+}
+.calculator {
+  font-size: 28px;
+  margin: 0 auto;
+  width: 20em;
+}
