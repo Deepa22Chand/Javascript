@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#"><img src="./images/jungleworks_logo.webp" alt="" /></a>
+      <a href="#">Dashboard</a>
+      <a href="#">Drivers</a>
+      <a href="">Customers</a>
+      <a href="#">All Vehicles</a>
+      <a href="#">Settings</a>
+    </div>
+
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰</button>
+      <p id="demo"></p>
+      <script>
+        function display(src, alt) {
+          var a = document.createElement("img");
+          a.src = src;
+
+          a.alt = alt;
+
+          document.getElementById("demo").appendChild(a);
+          //document.body.appendChild(a);
+        }
+        var img =
+          "https://drive.google.com/uc?id=1A2yCxeeQVifI1n1JeZkoC3da8ddAc5Jm";
+        display(img, "Deepa");
+      </script>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+  </body>
+</html>
