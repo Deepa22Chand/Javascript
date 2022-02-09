@@ -1,0 +1,108 @@
+body {
+  font-family: cursive;
+  background-color: rgba(114, 76, 76, 0.137);
+  margin: 0%;
+}
+.navbar {
+  margin: 0%;
+  background-color: rgba(170, 94, 94, 0.89);
+  padding: 30px;
+}
+
+.navbar a {
+  margin-left: 100px;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  padding: 30px;
+  font-weight: bolder;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  padding: 30px;
+  transition: 0.3s;
+}
+.title {
+  float: left;
+
+  font-size: 45px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  color: rgb(70, 4, 4);
+}
+button {
+  background-color: rgba(170, 94, 94, 0.89);
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: cursive;
+  width: 200px;
+  padding: 10px;
+  margin-left: 300px;
+  border-radius: 13px;
+}
+#MyForm {
+  display: none;
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 14px;
+  background: #ececec;
+}
+#cards {
+  margin: 0%;
+}
+#ReadStatus {
+  margin-left: 10px;
+  width: 100px;
+  cursor: pointer;
+  width: fit-content;
+}
+#Bookname {
+  float: left;
+  width: 200px;
+  height: 300px;
+  margin: 60px;
+  padding: 90px;
+  font-size: 30px;
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+    rgba(240, 109, 204, 1) 21%,
+    rgba(153, 44, 193, 1) 70%,
+    rgba(121, 9, 107, 1) 100%
+  );
+  border-radius: 5%;
+}
+
+/*margin (top, right, bottom, and left)*/
+.addUserBook {
+  margin-top: 40px;
+  margin-left: 300px;
+}
+#book .block {
+  padding: 20px;
+}
+label {
+  text-align: center;
+  font-weight: bolder;
+  font-size: larger;
+}
+input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+  height: 30px;
+  border-radius: 4px;
+}
+input[type="submit"] {
+  background-color: rgba(114, 76, 76, 0.918);
+  width: 310px;
+  height: 50px;
+}
+input[type="submit"]:hover {
+  background-color: rgba(137, 43, 226, 0.753);
+}
+h1 {
+  text-align: center;
+  font-size: 100px;
+}
