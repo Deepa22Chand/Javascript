@@ -5,47 +5,70 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
+    <!-- Toggle sidebar -->
     <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="index.html"
-        ><img src="./images/jungleworks_logo.webp" class="Logo"
-      /></a>
+      <a href="javascript:void(0)" class="closebtn" onclick="decide()">×</a>
+      <a href="index.html">
+        <!-- Junglework logo -->
+        <img src="./images/jungleworks_logo.webp" class="Logo" />
+      </a>
+      <!--  Sidebar Tabs -->
       <a href="#" class="content">Dashboard</a>
       <a href="#" class="content">Drivers</a>
       <a href="#" class="content">Customers</a>
       <a href="#" class="content">All Vehicles</a>
       <a href="#" class="content">Settings</a>
     </div>
-
+    <!-- toggle Navigation Bar button -->
     <div id="main">
-      <button class="openbtn" onclick="openNav()">☰</button>
+      <button class="openbtn" onclick="decide()">☰</button>
     </div>
-    <p id="demo"></p>
+    <!-- Content Areas   -->
+    <p id="demo">
+      <!-- Content Areas with my picture  -->
+    </p>
 
     <script>
+      //declare a global variable
+      var open = false;
+      //triggers decide() which function will then call one of the 2 functions.
+      function decide() {
+        if (open == true) {
+          closeNav();
+        } else {
+          openNav();
+        }
+      }
+
+      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
       function openNav() {
         document.getElementById("mySidebar").style.width = "250px";
         document.getElementById("main").style.marginLeft = "250px";
-
-        document.getElementById("main").style.marginLeft = "250px";
+        open = true;
       }
 
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
       function closeNav() {
         document.getElementById("mySidebar").style.width = "0";
         document.getElementById("main").style.marginLeft = "0";
+        open = false;
       }
+      // to display image in web page
       function display(src, alt) {
+        //creating an element image
+        //<img src="" id="Deepa_image" alt=" "/>
         var a = document.createElement("img");
         a.id = "Deepa_image";
         a.src = src;
-
         a.alt = alt;
-
         document.getElementById("demo").appendChild(a);
         //document.body.appendChild(a);
       }
+      //I have fetch this url as a result from fetch_image_from_google_drive.js javascript file
       var img =
         "https://drive.google.com/uc?id=1A2yCxeeQVifI1n1JeZkoC3da8ddAc5Jm";
+      //calling display function
+
       display(img, "Deepa");
     </script>
   </body>
