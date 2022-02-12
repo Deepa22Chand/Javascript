@@ -1,6 +1,12 @@
 body {
   background: linear-gradient(to bottom, #336699 0%, #ffffff 100%);
-  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.content:hover {
+  background-color: #444;
+  padding: 15px;
+  border-radius: 5%;
+  padding-left: 30px;
 }
 .sidebar {
   height: 100%;
@@ -23,18 +29,7 @@ body {
   display: block;
   transition: 0.3s;
 }
-p {
-  text-align: center;
-  width: 30%;
-  height: auto;
-  margin: 100px;
-  padding-left: 300px;
-  position: absolute;
-  width: 500px;
-  bottom: 100px;
-  right: 200px;
-  top: 30px;
-}
+
 .sidebar a:hover {
   color: #f1f1f1;
 }
@@ -46,7 +41,7 @@ p {
   font-size: 36px;
   margin-left: 50px;
 }
-img {
+.Logo {
   width: 90%;
   padding-right: 20px;
 }
@@ -68,12 +63,32 @@ img {
   padding: 16px;
 }
 
+#Deepa_image {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 450px;
+  margin-bottom: 20%;
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 450px) {
   .sidebar {
-    padding-top: 15px;
+    padding-top: 10px;
   }
   .sidebar a {
-    font-size: 18px;
+    font-size: 20px;
+  }
+  .openbtn {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+  .Logo {
+    width: 70%;
+    padding-top: 40px;
+  }
+  #Deepa_image {
+    width: 250px;
+    height: 300px;
   }
 }
